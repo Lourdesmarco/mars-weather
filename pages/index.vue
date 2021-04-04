@@ -5,7 +5,8 @@
       <h1 class="title">
         marsWeather
       </h1>
-      {{currentweather}}
+      <!-- <NuxtLink to="/rems.json">API REMS (tiempo en Marte ahora)</NuxtLink> -->
+      <a href="/rems.json" target="_blank">API REMS (tiempo en Marte ahora)</a>
      
     </div>
   </div>
@@ -91,7 +92,7 @@ export default {
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 4rem;
   color: #35495e;
   letter-spacing: 1px;
 }
