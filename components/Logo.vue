@@ -100,7 +100,7 @@
 .NuxtLogo {
   animation: 1s appear;
   margin: auto;
-  height: 50%;
+  height: 400px;
 }
 
 @keyframes appear {
