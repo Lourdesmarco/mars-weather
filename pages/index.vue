@@ -5,7 +5,7 @@
       <h1 class="title">
         marsWeather
       </h1>
-      <!-- <NuxtLink to="/rems.json">API REMS (tiempo en Marte ahora)</NuxtLink> -->
+      
       <a href="/rems.json" target="_blank">API REMS (tiempo en Marte ahora)</a>
      
     </div>
@@ -21,14 +21,14 @@ export default {
   data() {
       return {
         rems: [],
-        currentweather: []
+        //currentweather: []
       }
   },
 
   async fetch() {
 
-    this.currentweather = await fetch('/static/rems.json')
-      .then(res => res.json());   
+    // this.currentweather = await fetch('/static/rems.json')
+    //   .then(res => res.json());   
 
     const xmlData = await fetch('http://cab.inta-csic.es/rems/rems_weather.xml')
       .then(res => res.text());        
